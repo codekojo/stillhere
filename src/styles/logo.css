@@ -1,0 +1,186 @@
+/* Logo Component Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.logo-main-text {
+  font-family: var(--font-title);
+  font-size: 4rem;
+  font-weight: normal;
+  color: var(--color-day); /* #219EBC */
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.logo-tagline {
+  font-family: var(--font-subtitle);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--color-sun); /* #FB8500 */
+  margin: 0;
+  letter-spacing: var(--tracking-subtitle);
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.logo-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.logo-image {
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Logo variations for different contexts */
+.logo-container.hero-logo {
+  /* Hero logo inherits the white background from the hero section */
+}
+
+.logo-container.hero-logo .logo-main-text {
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+.logo-container.hero-logo .logo-tagline {
+  font-size: 1.8rem;
+}
+
+.logo-container.hero-logo .logo-image {
+  max-width: 140px;
+}
+
+.logo-container.header-logo {
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.logo-container.header-logo .logo-main-text {
+  font-size: 1.8rem;
+}
+
+.logo-container.header-logo .logo-tagline {
+  font-size: 0.9rem;
+}
+
+.logo-container.header-logo .logo-image {
+  max-width: 80px;
+}
+
+.logo-container.footer-logo {
+  padding: 1.5rem;
+  max-width: 300px;
+}
+
+.logo-container.footer-logo .logo-main-text {
+  font-size: 1.5rem;
+}
+
+.logo-container.footer-logo .logo-tagline {
+  font-size: 0.8rem;
+}
+
+.logo-container.footer-logo .logo-image {
+  max-width: 60px;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .logo-text-section {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo-image-section {
+    margin-left: 0;
+  }
+
+  .logo-main-text {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+  .logo-tagline {
+    font-size: 1.3rem;
+  }
+
+  .logo-image {
+    max-width: 100px;
+  }
+
+  .logo-container.hero-logo .logo-main-text {
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+
+  .logo-container.hero-logo .logo-tagline {
+    font-size: 1.5rem;
+  }
+
+  .logo-container.hero-logo .logo-image {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    padding: 1rem;
+  }
+
+  .logo-main-text {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  .logo-tagline {
+    font-size: 0.9rem;
+  }
+
+  .logo-image {
+    max-width: 80px;
+  }
+
+  .logo-container.hero-logo .logo-main-text {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  .logo-container.hero-logo .logo-tagline {
+    font-size: 1rem;
+  }
+
+  .logo-container.hero-logo .logo-image {
+    max-width: 100px;
+  }
+} 

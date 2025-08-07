@@ -1,0 +1,117 @@
+/* Iconography and Motifs */
+.angled-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.angled-line::before,
+.angled-line::after {
+  content: '';
+  position: absolute;
+  background: var(--color-day);
+  z-index: 1;
+}
+
+/* 0° horizontal line */
+.line-horizontal {
+  height: 2px;
+  width: 100%;
+  background: var(--color-day);
+}
+
+/* 90° vertical line */
+.line-vertical {
+  width: 2px;
+  height: 100%;
+  background: var(--color-day);
+}
+
+/* 45° diagonal line */
+.line-diagonal {
+  width: 2px;
+  height: 141.4%; /* sqrt(2) * 100% for 45° angle */
+  background: var(--color-day);
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+/* Line intersections */
+.line-intersection {
+  position: relative;
+}
+
+.line-intersection::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-morning);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.line-intersection::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--color-golden);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Motif variations */
+.motif-morning {
+  background: var(--color-morning);
+}
+
+.motif-day {
+  background: var(--color-day);
+}
+
+.motif-midnight {
+  background: var(--color-midnight);
+}
+
+.motif-golden {
+  background: var(--color-golden);
+}
+
+.motif-sun {
+  background: var(--color-sun);
+}
+
+/* Abstract connection lines */
+.connection-lines {
+  position: relative;
+  min-height: 200px;
+}
+
+.connection-line {
+  position: absolute;
+  background: var(--color-day);
+  opacity: 0.8;
+}
+
+.connection-line:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  top: 20%;
+  transform: rotate(0deg);
+}
+
+.connection-line:nth-child(2) {
+  width: 1px;
+  height: 60%;
+  left: 30%;
+  top: 20%;
+  transform: rotate(0deg);
+}
+
+.connection-line:nth-child(3) {
+  width: 1px;
+  height: 80%;
+  left: 70%;
+  top: 10%;
+  transform: rotate(45deg);
+} 

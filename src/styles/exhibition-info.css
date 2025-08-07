@@ -1,0 +1,268 @@
+/* Exhibition Info - New Timeline Design */
+.exhibition-container {
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  /* padding: 3rem 0; */
+  background: linear-gradient(
+    135deg,
+    var(--color-morning) 0%,
+    var(--color-day) 100%
+  );
+  /* min-height: 100vh; */
+  padding: 0 2rem;
+}
+
+.main-card {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.card-header {
+  text-align: center;
+  /* margin-bottom: 3rem; */
+  position: relative;
+}
+
+.project-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-golden), var(--color-sun));
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 183, 3, 0.3);
+}
+
+.main-title {
+  font-family: var(--font-title);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--color-midnight);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: var(--font-subtitle);
+  font-size: 1.1rem;
+  color: var(--color-day);
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.exhibition-timeline {
+  position: relative;
+  margin: 3rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.timeline-item {
+  flex: 1;
+  max-width: 450px;
+  position: relative;
+}
+
+.timeline-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(2, 48, 71, 0.1);
+  border: 1px solid rgba(33, 158, 188, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-title {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  color: var(--color-midnight);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.event-date {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-sun);
+  margin-bottom: 0.8rem;
+}
+
+.event-description {
+  font-family: var(--font-paragraph);
+  font-size: 1rem;
+  color: var(--color-day);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.venue-card {
+  background: linear-gradient(135deg, var(--color-midnight), var(--color-day));
+  color: white;
+  padding: 3rem;
+  border-radius: 25px;
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.venue-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 183, 3, 0.1) 0%,
+    transparent 50%
+  );
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.venue-title {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--color-golden);
+  position: relative;
+  z-index: 1;
+}
+
+.venue-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.venue-item {
+  text-align: left;
+}
+
+.venue-item h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-morning);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.venue-item p {
+  font-family: var(--font-paragraph);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.contact-section {
+  background: rgba(255, 183, 3, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  text-align: center;
+  border: 2px solid rgba(255, 183, 3, 0.2);
+}
+
+.contact-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-midnight);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  color: var(--color-sun);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: var(--color-midnight);
+  transition: color 0.3s ease;
+}
+
+.decorative-lines {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.1;
+}
+
+.decorative-lines::before,
+.decorative-lines::after {
+  content: "";
+  position: absolute;
+  background: var(--color-golden);
+}
+
+.decorative-lines::before {
+  width: 40px;
+  height: 2px;
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.decorative-lines::after {
+  width: 2px;
+  height: 40px;
+  left: 20px;
+  transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .exhibition-container {
+    padding: 1rem;
+  }
+
+  .main-card {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .exhibition-timeline {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    max-width: 100%;
+  }
+
+  .timeline-content {
+    margin: 0;
+  }
+
+  .venue-details {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

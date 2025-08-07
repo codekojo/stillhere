@@ -1,0 +1,295 @@
+/* Poetry Section Design */
+.poetry-section-container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-midnight);
+  color: var(--color-cloud);
+  font-family: var(--font-paragraph);
+}
+
+/* Left Column - Poem Content */
+.poetry-content {
+  flex: 0 0 60%;
+  padding: 4rem 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Left Graphics */
+.poetry-graphics {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.horizontal-lines {
+  margin-bottom: 1rem;
+}
+
+.line-short {
+  width: 40px;
+  height: 3px;
+  background: var(--color-golden);
+  margin-bottom: 0.5rem;
+}
+
+.line-long {
+  width: 80px;
+  height: 3px;
+  background: var(--color-golden);
+}
+
+.diagonal-lines {
+  position: relative;
+  height: 60px;
+}
+
+.diagonal-line-white {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--color-cloud);
+  top: 10px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.diagonal-line-blue {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--color-morning);
+  top: 30px;
+  left: 10px;
+  transform: rotate(-45deg);
+}
+
+/* Poem Title */
+.poem-title {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.poem-title h2 {
+  font-family: "Bodoni", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--color-golden);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.poem-title h3 {
+  font-family: "Bodoni", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-golden);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Author with Avatar */
+.poem-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  z-index: 2;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-golden);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-placeholder {
+  font-family: "Futura", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-midnight);
+}
+
+.author-name {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-morning);
+  letter-spacing: var(--tracking-subtitle);
+}
+
+/* Poem Text */
+.poem-text {
+  flex: 1;
+  z-index: 2;
+}
+
+.poem-text p {
+  font-family: "Futura", sans-serif;
+  font-size: var(--font-size-paragraph);
+  line-height: 1.8;
+  color: var(--color-cloud);
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 90%;
+}
+
+/* Right Column - Family Photo */
+.poetry-photo {
+  flex: 0 0 40%;
+  background: var(--color-cloud);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.family-photo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 183, 3, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.family-photo:hover {
+  transform: scale(1.05);
+}
+
+.family-photo-placeholder {
+  width: 100%;
+  height: 80%;
+  background: var(--color-midnight);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.photo-caption {
+  font-family: "Futura", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-cloud);
+  margin-bottom: 1rem;
+  letter-spacing: var(--tracking-heading);
+}
+
+.photo-description {
+  font-family: "Futura", sans-serif;
+  font-size: var(--font-size-paragraph);
+  color: var(--color-morning);
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .poetry-section-container {
+    flex-direction: column;
+  }
+
+  .poetry-content,
+  .poetry-photo {
+    flex: none;
+    width: 100%;
+  }
+
+  .poetry-content {
+    padding: 3rem 2rem;
+  }
+
+  .poetry-photo {
+    padding: 2rem;
+  }
+
+  .family-photo-placeholder {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .poetry-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .poem-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .poem-title h3 {
+    font-size: 2rem;
+  }
+
+  .poem-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .family-photo-placeholder {
+    height: 300px;
+    padding: 1.5rem;
+  }
+
+  .photo-caption {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .poetry-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .poem-title h2 {
+    font-size: 2rem;
+  }
+
+  .poem-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .poem-text p {
+    font-size: 0.9rem;
+  }
+
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar-placeholder {
+    font-size: 1rem;
+  }
+
+  .family-photo-placeholder {
+    height: 250px;
+    padding: 1rem;
+  }
+
+  .photo-caption {
+    font-size: 1rem;
+  }
+
+  .photo-description {
+    font-size: 0.9rem;
+  }
+} 

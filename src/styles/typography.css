@@ -1,0 +1,63 @@
+/* Typography Classes */
+.title {
+  font-family: var(--font-title);
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  color: var(--color-midnight);
+  line-height: 1.2;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-midnight);
+  line-height: 1.4;
+}
+
+.subtitle {
+  font-family: var(--font-subtitle);
+  font-size: var(--font-size-subtitle);
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: var(--tracking-subtitle);
+  color: var(--color-day);
+  line-height: 1.5;
+}
+
+.paragraph {
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-paragraph);
+  font-weight: normal;
+  color: var(--color-midnight);
+  line-height: 1.6;
+}
+
+/* Profile Layout Template */
+.profile-layout {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-style: italic;
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-midnight);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.profile-years {
+  font-size: var(--font-size-subtitle);
+  color: var(--color-day);
+  margin-bottom: 0.25rem;
+}
+
+.profile-location {
+  font-size: var(--font-size-paragraph);
+  color: var(--color-midnight);
+} 

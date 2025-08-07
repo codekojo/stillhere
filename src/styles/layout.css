@@ -1,0 +1,144 @@
+/* Layout Styles */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-cloud);
+  min-height: 100vh;
+}
+
+.chapter-opening {
+  position: relative;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--color-morning) 0%, var(--color-day) 100%);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.chapter-opening::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-golden);
+  left: 10%;
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.chapter-opening::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--color-sun);
+  bottom: 20%;
+  left: 0;
+}
+
+.multi-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.photo-collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.full-spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+  align-items: center;
+}
+
+.full-spread::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-morning);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-marking {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-paragraph);
+  color: var(--color-day);
+  letter-spacing: var(--tracking-heading);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .full-spread {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .multi-column {
+    grid-template-columns: 1fr;
+  }
+  
+  .photo-collage {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .title {
+    font-size: 40px;
+  }
+  
+  .heading {
+    font-size: 20px;
+  }
+}
+
+/* Background patterns */
+.sky-pattern {
+  background: 
+    linear-gradient(45deg, var(--color-morning) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-day) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--color-morning) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--color-day) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  opacity: 0.1;
+}
+
+/* Section dividers */
+.section-divider {
+  position: relative;
+  height: 4px;
+  background: var(--color-golden);
+  margin: 3rem 0;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-sun);
+  left: 25%;
+}
+
+.section-divider::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: var(--color-morning);
+  right: 25%;
+} 

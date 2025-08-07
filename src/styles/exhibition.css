@@ -1,0 +1,515 @@
+/* Global Styles for Full Width */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Exhibition Landing Page Styles */
+.exhibition-landing {
+  font-family: var(--font-paragraph);
+  line-height: 1.6;
+  color: var(--color-midnight);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: var(--color-cloud);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 100%;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content .title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-midnight);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content .subtitle {
+  font-size: 1.5rem;
+  color: var(--color-day);
+  margin-bottom: 2rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--color-midnight);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* Countdown Section */
+.countdown-section {
+  background: linear-gradient(135deg, var(--color-morning) 0%, var(--color-day) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto 3rem;
+  max-width: 700px;
+  border: 3px solid var(--color-golden);
+  animation: fadeInUp 1s ease-out 0.9s both;
+  box-shadow: 0 8px 32px rgba(142, 202, 230, 0.3);
+}
+
+.countdown-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-golden);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: var(--tracking-heading);
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  min-width: 80px;
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--color-sun);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(251, 133, 0, 0.2);
+}
+
+.countdown-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-day);
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.countdown-label {
+  font-family: var(--font-paragraph);
+  font-size: 0.9rem;
+  color: var(--color-sun);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.countdown-subtitle {
+  text-align: center;
+  color: var(--color-cloud);
+  font-size: 1rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Connecting Lines */
+.connecting-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.line {
+  position: absolute;
+  background: var(--color-golden);
+  opacity: 0.3;
+  animation: slideIn 2s ease-out;
+}
+
+.line-1 {
+  width: 200px;
+  height: 3px;
+  top: 20%;
+  left: 10%;
+  transform: rotate(45deg);
+  animation-delay: 0.5s;
+}
+
+.line-2 {
+  width: 150px;
+  height: 3px;
+  top: 60%;
+  right: 15%;
+  transform: rotate(-45deg);
+  animation-delay: 1s;
+}
+
+.line-3 {
+  width: 100px;
+  height: 3px;
+  bottom: 30%;
+  left: 20%;
+  transform: rotate(90deg);
+  animation-delay: 1.5s;
+}
+
+/* Exhibition Info Section */
+.exhibition-info {
+  background: var(--color-cloud);
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.info-card {
+  background: linear-gradient(135deg, var(--color-morning), var(--color-day));
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  color: var(--color-cloud);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.info-card:hover::before {
+  opacity: 1;
+  animation: shimmer 0.6s ease-out;
+}
+
+.info-card .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-cloud);
+}
+
+.info-card .paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.date-highlight {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-golden);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Poetry Section */
+.poetry-section {
+  background: var(--color-midnight);
+  padding: 4rem 2rem;
+  color: var(--color-cloud);
+  position: relative;
+}
+
+.poetry-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.poetry-text {
+  font-family: var(--font-paragraph);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.poetry-author {
+  font-family: var(--font-paragraph);
+  font-size: 1.1rem;
+  color: var(--color-golden);
+}
+
+/* Media Section */
+.media-section {
+  background: linear-gradient(135deg, var(--color-golden), var(--color-sun));
+  padding: 4rem 2rem;
+  color: var(--color-midnight);
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.media-card {
+  background: var(--color-cloud);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+}
+
+.qr-placeholder {
+  width: 120px;
+  height: 120px;
+  background: var(--color-morning);
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--color-midnight);
+  text-align: center;
+}
+
+/* Partners Section */
+.partners-section {
+  background: var(--color-cloud);
+  padding: 4rem 2rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.partner-card {
+  background: var(--color-cloud);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--color-morning);
+  transition: border-color 0.3s ease;
+}
+
+.partner-card:hover {
+  border-color: var(--color-golden);
+}
+
+/* Contact Section */
+.contact-section {
+  background: var(--color-midnight);
+  padding: 4rem 2rem;
+  color: var(--color-cloud);
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.email-link {
+  color: var(--color-golden);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: var(--color-sun);
+}
+
+/* Floating Elements */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.floating-line {
+  position: absolute;
+  background: var(--color-golden);
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-line:nth-child(1) {
+  width: 100px;
+  height: 2px;
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.floating-line:nth-child(2) {
+  width: 80px;
+  height: 2px;
+  top: 30%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.floating-line:nth-child(3) {
+  width: 60px;
+  height: 2px;
+  bottom: 20%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px) rotate(45deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(45deg);
+    opacity: 0.3;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content .title {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-timer {
+    gap: 1rem;
+  }
+
+  .countdown-item {
+    min-width: 60px;
+    padding: 0.75rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+} 

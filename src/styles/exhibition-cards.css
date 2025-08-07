@@ -1,0 +1,175 @@
+/* Exhibition Cards Styles */
+.exhibition-cards-section {
+  background: var(--color-midnight);
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.exhibition-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exhibition-card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: var(--color-midnight);
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.exhibition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.exhibition-card-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.exhibition-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.exhibition-card:hover .exhibition-card-image {
+  filter: grayscale(0%);
+  opacity: 0.8;
+}
+
+.exhibition-card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  color: var(--color-cloud);
+  background: linear-gradient(
+    to top,
+    rgba(2, 48, 71, 0.9) 0%,
+    rgba(2, 48, 71, 0.7) 50%,
+    rgba(2, 48, 71, 0.3) 100%
+  );
+}
+
+.exhibition-card-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--color-cloud);
+  margin-bottom: 0.5rem;
+  letter-spacing: var(--tracking-heading);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.exhibition-card-subtitle {
+  font-family: var(--font-paragraph);
+  font-size: 1.1rem;
+  color: var(--color-morning);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.exhibition-card-date {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-golden);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* Card variations */
+.exhibition-card.opening {
+  border: 2px solid var(--color-morning);
+}
+
+.exhibition-card.opening:hover {
+  border-color: var(--color-day);
+  box-shadow: 0 20px 40px rgba(142, 202, 230, 0.3);
+}
+
+.exhibition-card.gala {
+  border: 2px solid var(--color-golden);
+}
+
+.exhibition-card.gala:hover {
+  border-color: var(--color-sun);
+  box-shadow: 0 20px 40px rgba(255, 183, 3, 0.3);
+}
+
+.exhibition-card.closing {
+  border: 2px solid var(--color-day);
+}
+
+.exhibition-card.closing:hover {
+  border-color: var(--color-morning);
+  box-shadow: 0 20px 40px rgba(33, 158, 188, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .exhibition-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .exhibition-card {
+    height: 350px;
+  }
+
+  .exhibition-card-title {
+    font-size: 2rem;
+  }
+
+  .exhibition-card-subtitle {
+    font-size: 1rem;
+  }
+
+  .exhibition-card-date {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .exhibition-cards-section {
+    padding: 4rem 1rem;
+  }
+
+  .exhibition-card {
+    height: 300px;
+  }
+
+  .exhibition-card-content {
+    padding: 1.5rem;
+  }
+
+  .exhibition-card-title {
+    font-size: 1.8rem;
+  }
+
+  .exhibition-card-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .exhibition-card-date {
+    font-size: 1rem;
+  }
+} 

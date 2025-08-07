@@ -1,0 +1,25 @@
+:root {
+  /* Color Palette */
+  --color-morning: #8ecae6;
+  --color-day: #219ebc;
+  --color-midnight: #023047;
+  --color-golden: #ffb703;
+  --color-sun: #fb8500;
+  --color-cloud: #ffffff;
+
+  /* Typography */
+  --font-title: "Bodoni", serif;
+  --font-heading: "Futura", sans-serif;
+  --font-subtitle: "Proxima Nova", sans-serif;
+  --font-paragraph: "Futura", sans-serif;
+
+  /* Font Sizes */
+  --font-size-title: 65px;
+  --font-size-heading: 24px;
+  --font-size-subtitle: 16px;
+  --font-size-paragraph: 12px;
+
+  /* Spacing */
+  --tracking-heading: 0.1em;
+  --tracking-subtitle: 0.05em;
+}
