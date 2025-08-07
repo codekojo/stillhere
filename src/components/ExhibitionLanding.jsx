@@ -14,6 +14,8 @@ import "../styles/media-coverage.css";
 import "../styles/poetry-section.css";
 import "../styles/partners-section.css";
 
+import logos from "../assets/logo.png";
+
 const ExhibitionLanding = () => {
   const [countdown, setCountdown] = useState({
     days: 0,
@@ -122,19 +124,27 @@ const ExhibitionLanding = () => {
       {/* Contact Section */}
       <section className="contact-section">
         <div className="container">
-          <h2 className="heading" style={{ color: "var(--color-cloud)" }}>
-            Get In Touch
-          </h2>
-          <div className="contact-info">
-            <p className="paragraph">
-              For more information about Still Here: Preserving Our Legacy
-            </p>
-            <p className="paragraph">
-              Contact us at:
-              <a href="mailto:stillherenb@gmail.com" className="email-link">
-                stillherenb@gmail.com
-              </a>
-            </p>
+          <h2 className="contact-title">Get In Touch</h2>
+          <a href="mailto:stillherenb@gmail.com" className="contact-email">
+            stillherenb@gmail.com
+          </a>
+          <p
+            style={{
+              fontSize: "0.9rem",
+            }}
+          >
+            For more information about Still Here: Preserving Our Legacy
+          </p>
+
+          <div style={{ textAlign: "center" }}>
+            <img
+              src={logos}
+              alt="Still Here Logo"
+              style={{
+                width: "120px",
+                height: "auto",
+              }}
+            />
           </div>
         </div>
       </section>

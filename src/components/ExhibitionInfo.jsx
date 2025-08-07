@@ -81,6 +81,8 @@ const ExhibitionInfo = () => {
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   );

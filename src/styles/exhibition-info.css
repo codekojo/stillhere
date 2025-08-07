@@ -179,32 +179,33 @@
 }
 
 .contact-section {
-  background: rgba(255, 183, 3, 0.1);
-  padding: 2rem;
-  border-radius: 20px;
-  margin-top: 2rem;
+  background: var(--color-midnight);
+  padding: 2.5rem;
+  border-radius: 15px;
   text-align: center;
-  border: 2px solid rgba(255, 183, 3, 0.2);
+  box-shadow: 0 10px 30px rgba(2, 48, 71, 0.1);
+  border: 1px solid rgba(33, 158, 188, 0.1);
 }
 
 .contact-title {
   font-family: var(--font-heading);
-  font-size: 1.3rem;
-  color: var(--color-midnight);
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-cloud);
+  margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .contact-email {
+  font-family: var(--font-paragraph);
   font-size: 1.1rem;
-  color: var(--color-sun);
+  color: var(--color-golden);
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-email:hover {
-  color: var(--color-midnight);
-  transition: color 0.3s ease;
+  color: var(--color-cloud);
 }
 
 .decorative-lines {
