@@ -484,12 +484,23 @@ html, body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero-content {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
   .hero-content .title {
     font-size: 2.5rem;
   }
 
   .hero-content .subtitle {
     font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .heading {
@@ -500,16 +511,91 @@ html, body {
     grid-template-columns: 1fr;
   }
 
+  .countdown-section {
+    padding: 1.5rem;
+    margin: 1rem auto 2rem;
+    max-width: 95%;
+  }
+
+  .countdown-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
   .countdown-timer {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .countdown-item {
+    min-width: 70px;
+    padding: 0.5rem;
+    flex: 1;
+    max-width: 80px;
+  }
+
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+
+  .countdown-subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0.5rem;
     gap: 1rem;
+  }
+
+  .hero-content .title {
+    font-size: 2rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .countdown-section {
+    padding: 1rem;
+    margin: 0.5rem auto 1.5rem;
+  }
+
+  .countdown-title {
+    font-size: 1rem;
+  }
+
+  .countdown-timer {
+    gap: 0.25rem;
   }
 
   .countdown-item {
     min-width: 60px;
-    padding: 0.75rem;
+    max-width: 70px;
+    padding: 0.4rem;
   }
 
   .countdown-number {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.6rem;
+  }
+
+  .countdown-subtitle {
+    font-size: 0.8rem;
   }
 } 
