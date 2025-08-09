@@ -46,15 +46,13 @@
 }
 
 .logo-image {
-  max-width: 120px;
+  width: 120px;
   height: auto;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
   transition: all 0.3s ease;
 }
 
 .logo-image:hover {
   transform: scale(1.05);
-  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 /* Logo variations for different contexts */
@@ -183,4 +181,4 @@
   .logo-container.hero-logo .logo-image {
     max-width: 100px;
   }
-} 
+}

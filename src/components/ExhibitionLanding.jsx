@@ -68,10 +68,11 @@ const ExhibitionLanding = () => {
         <div className="hero-content">
           <Logo className="hero-logo" />
           <p className="paragraph hero-description">
-            An innovative multimedia exhibition celebrating Black families who
-            have been in Canada since the 1700s. Through contemporary
-            photographs, poetry, and historical artifacts, we explore universal
-            themes of heritage, community, and identity.
+            Still Here: Preserving Our Legacy" weaves together historical
+            documents, poignant poetry, and compelling photographs to celebrate
+            New Brunswick's vibrant Black community. This project encapsulates
+            our vision; to create a tribute to the past, a reflection of the
+            present, and an inspiration for future generations.
           </p>
 
           <div className="countdown-section">
