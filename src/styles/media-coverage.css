@@ -67,7 +67,7 @@
 .qr-code {
   width: 80px;
   height: 80px;
-  background: var(--color-midnight);
+  /* background: var(--color-midnight); */
   margin: 0 auto 1rem;
   border-radius: 8px;
   display: flex;
@@ -323,4 +323,4 @@
     height: 60px;
     font-size: 1rem;
   }
-} 
+}

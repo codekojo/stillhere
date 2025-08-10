@@ -2,6 +2,11 @@ import React from "react";
 import pbImg from "../assets/pg.png";
 import first from "../assets/1.png";
 import second from "../assets/2.png";
+
+import qr1 from "../assets/qr1.png";
+import qr2 from "../assets/qr2.png";
+import qr3 from "../assets/qr3.png";
+
 const MediaCoverage = () => {
   return (
     <div className="media-coverage-container">
@@ -16,7 +21,13 @@ const MediaCoverage = () => {
 
         <div className="qr-panels">
           <div className="qr-panel">
-            <div className="qr-code">QR</div>
+            <div className="qr-code">
+              <img
+                src={qr1}
+                alt=""
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              />
+            </div>
             <h3>
               Poems and History: Thandiwe McCarthy Reflects on Being Black in
               New Brunswick
@@ -24,12 +35,26 @@ const MediaCoverage = () => {
             <p>November 21, 2023</p>
           </div>
           <div className="qr-panel">
-            <div className="qr-code">QR</div>
+            <div className="qr-code">
+              {" "}
+              <img
+                src={qr2}
+                alt=""
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              />
+            </div>
             <h3>Poet strives to show Black history's place in New Brunswick</h3>
             <p>March 2023</p>
           </div>
           <div className="qr-panel">
-            <div className="qr-code">QR</div>
+            <div className="qr-code">
+              {" "}
+              <img
+                src={qr3}
+                alt=""
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              />
+            </div>
             <h3>
               The journey to trace the roots of Black people in New Brunswick
             </h3>
