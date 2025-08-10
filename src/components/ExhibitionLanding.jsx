@@ -68,7 +68,7 @@ const ExhibitionLanding = () => {
         <div className="hero-content">
           <Logo className="hero-logo" />
           <p className="paragraph hero-description">
-            Still Here: Preserving Our Legacy" weaves together historical
+            Still Here: Preserving Our Legacy weaves together historical
             documents, poignant poetry, and compelling photographs to celebrate
             New Brunswick's vibrant Black community. This project encapsulates
             our vision; to create a tribute to the past, a reflection of the
