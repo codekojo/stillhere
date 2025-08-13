@@ -15,32 +15,38 @@ const ExhibitionInfo = () => {
             <div className="timeline-content">
               <h3 className="event-title">Exhibition Opens</h3>
               <div className="event-date">Saturday, July 18th, 2026</div>
-              {/* <p className="event-description">
-                The official opening of Still Here: Preserving Our Legacy at The
-                Beaverbrook Art Gallery
-              </p> */}
+
+              <h3 className="event-title">Official Opening</h3>
+
+              <p className="event-description">
+                Still Here: Preserving Our Legacy at The Beaverbrook Art Gallery
+              </p>
             </div>
           </div>
 
           <div className="timeline-item">
             <div className="timeline-content">
               <h3 className="event-title">Gala Opening Reception</h3>
+
               <div className="event-date">Saturday, August 1st, 2026</div>
-              {/* <p className="event-description">
-                Book Launch Reception for ALL of our Families - a celebration of
+              <h3 className="event-title">Book Launch & Reception</h3>
+              <p className="event-description">
+                Experience our book launch and reception - a celebration of
                 community and heritage
-              </p> */}
+              </p>
             </div>
           </div>
 
           <div className="timeline-item">
             <div className="timeline-content">
               <h3 className="event-title">Exhibition Closes</h3>
-              <div className="event-date">Sunday, December 13th, 2026</div>
-              {/* <p className="event-description">
+              <div className="event-date">Sunday, Dec 13th, 2026</div>
+              <h3 className="event-title">End of Exhibition</h3>
+
+              <p className="event-description">
                 Final opportunity to experience this transformative journey
                 through Black Canadian history
-              </p> */}
+              </p>
             </div>
           </div>
         </div>
