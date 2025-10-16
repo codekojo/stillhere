@@ -34,6 +34,26 @@ const ExhibitionInfo = () => {
                 Experience our book launch and reception - a celebration of
                 community and heritage
               </p>
+              <div style={{ marginTop: "1rem" }}>
+                <a
+                  href="https://gooselane.com/products/still-here?_pos=1&_psq=still+here&_ss=e&_v=1.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="preorder-link"
+                  style={{
+                    display: "inline-block",
+                    padding: "0.75rem 1.5rem",
+                    backgroundColor: "#000",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "4px",
+                    fontWeight: "500",
+                    transition: "background-color 0.3s ease"
+                  }}
+                >
+                  Pre-Order Book
+                </a>
+              </div>
             </div>
           </div>
 

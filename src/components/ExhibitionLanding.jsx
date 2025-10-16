@@ -147,6 +147,27 @@ const ExhibitionLanding = () => {
               }}
             />
           </div>
+
+          <div style={{ textAlign: "center", marginTop: "2rem", paddingTop: "2rem", borderTop: "1px solid #e0e0e0" }}>
+            <p style={{ fontSize: "0.85rem", color: "#666" }}>
+              Developed by{" "}
+              <a
+                href="https://clintoncodes.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#000",
+                  textDecoration: "none",
+                  fontWeight: "500",
+                  transition: "opacity 0.3s ease"
+                }}
+                onMouseEnter={(e) => e.target.style.opacity = "0.7"}
+                onMouseLeave={(e) => e.target.style.opacity = "1"}
+              >
+                SWIC Agency
+              </a>
+            </p>
+          </div>
         </div>
       </section>
     </div>
