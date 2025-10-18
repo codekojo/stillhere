@@ -26,6 +26,18 @@ const ExhibitionInfo = () => {
 
           <div className="timeline-item">
             <div className="timeline-content">
+              <h3 className="event-title">Emancipation Festival</h3>
+              <div className="event-date">July 31st to August 3rd, 2026</div>
+              <h3 className="event-title">Emancipation celebration</h3>
+
+              <p className="event-description">
+                Join us for a four-day celebration of Black history, culture, and community during the Emancipation Festival
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-content">
               <h3 className="event-title">Gala Opening Reception</h3>
 
               <div className="event-date">Saturday, August 1st, 2026</div>
@@ -34,26 +46,6 @@ const ExhibitionInfo = () => {
                 Experience our book launch and reception - a celebration of
                 community and heritage
               </p>
-              <div style={{ marginTop: "1rem" }}>
-                <a
-                  href="https://gooselane.com/products/still-here?_pos=1&_psq=still+here&_ss=e&_v=1.0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="preorder-link"
-                  style={{
-                    display: "inline-block",
-                    padding: "0.75rem 1.5rem",
-                    backgroundColor: "#000",
-                    color: "#fff",
-                    textDecoration: "none",
-                    borderRadius: "4px",
-                    fontWeight: "500",
-                    transition: "background-color 0.3s ease"
-                  }}
-                >
-                  Pre-Order Book
-                </a>
-              </div>
             </div>
           </div>
 
